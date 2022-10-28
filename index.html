@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手风琴</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .wapper{
+            width: 200px;
+            position: absolute;
+            left: calc(50%);
+            transform: translateX(-50%) translateY(-50%);
+            top: calc(50%);
+        }
+        .wapper .son{
+            line-height: 50px;
+            text-align: center;
+            background-color: yellow;
+            cursor: pointer;
+            height: 50px;
+            overflow: hidden;
+        }
+        .ondown{
+            transition: all 0.3s;
+        }
+        .wapper .son:hover .ondown{
+            margin-top: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wapper">
+        <div class="son dd">
+            <div class="ondown">我是第1个</div>
+            <div class="text">第1个</div>
+        </div>
+        <div class="son">
+            <div class="ondown">我是第2个</div>
+            <div class="text">第2个</div>
+        </div>
+        <div class="son">
+            <div class="ondown">我是第3个</div>
+            <div class="text">第3个</div>
+        </div>
+    </div>
+</body>
+</html>
